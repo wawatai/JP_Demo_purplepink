@@ -1,0 +1,494 @@
+@charset "UTF-8";
+header .lang::before {
+  background: url(../img/lang_icon.png) no-repeat;
+  background-size: contain;
+}
+
+header .mq_icon {
+  background: url(../img/mqText_icon.png) no-repeat;
+  background-size: contain;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select,
+input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+main {
+  display: block;
+}
+
+i {
+  display: block;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+html {
+  width: 100%;
+  height: auto;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+html body header {
+  width: 100%;
+  height: 107px;
+  background: white;
+  position: fixed;
+  margin: 0;
+  z-index: 999;
+}
+html body header .top {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 55px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body header .top .logo {
+  width: 132px;
+  height: 76px;
+  color: #cc00ff;
+  font-size: 43px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body header .top .rightArea {
+  width: 930px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body header .top .rightArea .unLog {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body header .top .rightArea .unLog input {
+  width: 211px;
+  height: 40px;
+  background: #282828;
+  border-radius: 5px;
+}
+html body header .top .rightArea .unLog input::-webkit-input-placeholder {
+  color: white;
+  padding: 14px 29px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body header .top .rightArea .unLog input::-moz-placeholder {
+  color: white;
+  padding: 14px 29px;
+  box-sizing: border-box;
+}
+html body header .top .rightArea .unLog input:-ms-input-placeholder {
+  color: white;
+  padding: 14px 29px;
+  box-sizing: border-box;
+}
+html body header .top .rightArea .unLog input::-ms-input-placeholder {
+  color: white;
+  padding: 14px 29px;
+  box-sizing: border-box;
+}
+html body header .top .rightArea .unLog input::placeholder {
+  color: white;
+  padding: 14px 29px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body header .top .rightArea .unLog::before {
+  content: "パスワードをお忘れですか？";
+  color: #22c3fd;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  bottom: -17px;
+  left: 320px;
+  cursor: pointer;
+}
+html body header .top .rightArea .unLog button {
+  width: auto;
+  height: 36px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 43px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+html body header .top .rightArea .unLog button.login1 {
+  background: -webkit-gradient(linear, left top, right top, from(#6800d2), color-stop(53%, #ec00de), to(#fd0059));
+  background: linear-gradient(to right, #6800d2 0%, #ec00de 53%, #fd0059 100%);
+}
+html body header .top .rightArea .unLog button.login2 {
+  background: #0bc7ff;
+}
+html body header .top .rightArea .lang {
+  width: 117px;
+  height: 35px;
+  color: rgba(0, 0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+html body header .top .rightArea .lang::before {
+  content: " ";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+html body header .top .rightArea .lang select {
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 25px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+}
+html body header .mq_text {
+  width: 100%;
+  height: 31px;
+  background: #e3e3e3;
+  position: absolute;
+  top: 77px;
+  left: 0;
+}
+html body header .mq_text .mqBox {
+  max-width: 1806px;
+  min-width: 1400px;
+  height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+html body header .mq_text .mqBox .mq_icon {
+  width: 17px;
+  height: 17px;
+}
+html body header .mq_text .mqBox .textBox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+html body header .mq_text .mqBox .textBox .content {
+  width: auto;
+  display: inline;
+  white-space: nowrap;
+  padding-left: 100%;
+  -webkit-animation: mqText 15s linear 0s infinite;
+          animation: mqText 15s linear 0s infinite;
+}
+@-webkit-keyframes mqText {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes mqText {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+html body .mainWrap {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html body .mainWrap .ad {
+  width: 100%;
+  position: relative;
+}
+html body .mainWrap .ad .single-item {
+  margin: 0;
+}
+html body .mainWrap .ad .single-item .slick-slide {
+  outline: none;
+  cursor: pointer;
+}
+html body .mainWrap .ad .single-item .slick-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .mainWrap .ad .single-item .slick-arrow {
+  z-index: 1;
+}
+html body .mainWrap .ad .single-item .slick-dots {
+  bottom: 0px;
+}
+html body .mainWrap .ad .single-item .slick-dots li {
+  margin: 0;
+}
+html body .mainWrap .ad .single-item .slick-dots li.slick-active button::before {
+  opacity: 1;
+}
+html body .mainWrap .ad .single-item button::before {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  color: transparent;
+}
+html body .mainWrap nav {
+  width: 100%;
+  height: auto;
+}
+html body .mainWrap nav ul {
+  width: 100%;
+  min-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+html body .mainWrap nav ul li {
+  width: 120px;
+  height: 84px;
+  cursor: pointer;
+}
+html body .mainWrap nav ul li .navIcon {
+  width: 41px;
+  height: 41px;
+}
+html body .mainWrap nav ul li .navIcon.sport {
+  background-position-x: 0%;
+}
+html body .mainWrap nav ul li .navIcon.live {
+  background-position-x: 20%;
+}
+html body .mainWrap nav ul li .navIcon.slot {
+  background-position-x: 40%;
+}
+html body .mainWrap nav ul li .navIcon.fish {
+  background-position-x: 60%;
+}
+html body .mainWrap nav ul li .navIcon.poker {
+  background-position-x: 80%;
+}
+html body .mainWrap nav ul li .navIcon.ticket {
+  background-position-x: 100%;
+}
+html body .mainWrap nav ul li a {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+html body main {
+  width: 100%;
+  height: auto;
+  padding-top: 108px;
+}

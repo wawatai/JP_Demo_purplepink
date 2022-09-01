@@ -1,0 +1,104 @@
+.mainWrap {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+//輪播圖
+  .ad {
+    width: 100%;
+    position: relative;
+
+    .single-item {
+      margin: 0;
+
+      .slick-slide {
+        outline: none;
+        cursor: pointer;
+  
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .slick-arrow {
+        z-index: 1;
+      }
+
+      .slick-dots {
+        bottom: 0px;
+
+        li {
+          margin: 0;
+
+          &.slick-active {
+            button {
+              &::before {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        &::before {
+          width: 8px;
+          height: 8px;
+          background: $mqBtn;
+          border-radius: 50%;
+          color: transparent;
+        }
+      }
+    }
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+
+    ul {
+        width: 100%;
+        min-width: 1400px;
+        display: flex;
+        justify-content: space-around;
+        
+        li {
+            width: 120px;
+            height: 84px;
+            cursor: pointer;
+
+            .navIcon {
+                width: 41px;
+                height: 41px;
+
+                &.sport {
+                    background-position-x: 0%;
+                }
+                &.live {
+                    background-position-x: 20%;
+                }
+                &.slot {
+                    background-position-x: 40%;
+                }
+                &.fish {
+                    background-position-x: 60%;
+                }
+                &.poker {
+                    background-position-x: 80%;
+                }
+                &.ticket {
+                    background-position-x: 100%;
+                }
+        
+            }
+
+            a {
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+  }
+}
