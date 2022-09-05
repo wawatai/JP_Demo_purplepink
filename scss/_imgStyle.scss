@@ -8,3 +8,56 @@ header .mq_icon {
     background: url(../img/mqText_icon.png) no-repeat;
     background-size: contain;
 }
+
+//nav 
+.mainWrap nav ul li .navIcon {
+    background: url(../img/nav_icon.png) no-repeat center;
+    background-size: 600%;
+}
+
+//wrap
+.mainWrap .side_Left .popBlock.left01 {
+    background: url(../img/left01.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainWrap .side_Left .popBlock.left02 {
+    background: url(../img/left02.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainWrap .side_Left .popBlock.left02::before {
+    background: url(../img/left02_01.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainWrap .arrowIcon,
+.mainWrap .nextIcon {
+    background: url(../img/right-arrow.png) no-repeat center;
+    background-size: contain;
+}
+
+.mainWrap .side_Right .searchIc {
+    background: url(../img/search_icon.png) no-repeat center;
+    background-size: 100%;
+}
+
+.mainWrap .side_Right .newGame li::before {
+    background: url(../img/newtext.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainWrap .bottomAll button::before {
+    background: url(../img/showmoreBtn.png) no-repeat;
+    background-size: contain;
+}
+
+.mainWrap .bottomAll button::after {
+    background: url(../img/downarrow_icon.png) no-repeat;
+    background-size: contain;
+}
+
+.footer ul li p span::before {
+    background: url(../img/pageHovIc.png) no-repeat;
+    background-size: contain;
+}
