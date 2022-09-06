@@ -30,13 +30,19 @@ header .mq_icon {
 }
 
 .mainWrap .arrowIcon,
-.mainWrap .nextIcon {
+.mainWrap .nextIcon,
+.mainWrap .middle_Area .bottom .gameBlock::after {
   background: url(../img/right-arrow.png) no-repeat center;
   background-size: contain;
 }
 
 .mainWrap .side_Right .searchIc {
   background: url(../img/search_icon.png) no-repeat center;
+  background-size: 100%;
+}
+
+.mainWrap .side_Right .newGame::before {
+  background: url(../img/newGame_deco.png) no-repeat center;
   background-size: 100%;
 }
 
@@ -55,8 +61,28 @@ header .mq_icon {
   background-size: contain;
 }
 
-.footer ul li p span::before {
+aside .backtop {
+  background: url(../img/top-arrow.png) no-repeat;
+  background-size: contain;
+}
+
+footer::before {
+  background: url(../img/footerPic01.png) no-repeat;
+  background-size: contain;
+}
+
+footer::after {
+  background: url(../img/footerPic02.png) no-repeat;
+  background-size: contain;
+}
+
+footer ul li p span::after {
   background: url(../img/pageHovIc.png) no-repeat;
+  background-size: contain;
+}
+
+footer button::after {
+  background: url(../img/footerBtnHov.png) no-repeat;
   background-size: contain;
 }
 
@@ -275,6 +301,7 @@ html body header .top .logo {
   padding: 15px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: pointer;
 }
 html body header .top .rightArea {
   width: 930px;
@@ -305,44 +332,48 @@ html body header .top .rightArea .unLog input {
   background: #282828;
   border: none;
   border-radius: 5px;
+  caret-color: white;
+  padding: 14px 20px;
 }
 html body header .top .rightArea .unLog input::-webkit-input-placeholder {
   color: white;
-  padding: 14px 20px;
+  padding: 14px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 html body header .top .rightArea .unLog input::-moz-placeholder {
   color: white;
-  padding: 14px 20px;
+  padding: 14px 0;
   box-sizing: border-box;
 }
 html body header .top .rightArea .unLog input:-ms-input-placeholder {
   color: white;
-  padding: 14px 20px;
+  padding: 14px 0;
   box-sizing: border-box;
 }
 html body header .top .rightArea .unLog input::-ms-input-placeholder {
   color: white;
-  padding: 14px 20px;
+  padding: 14px 0;
   box-sizing: border-box;
 }
 html body header .top .rightArea .unLog input::placeholder {
   color: white;
-  padding: 14px 20px;
+  padding: 14px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-html body header .top .rightArea .unLog::before {
-  content: "パスワードをお忘れですか？";
+html body header .top .rightArea .unLog .forgotPW {
   color: #22c3fd;
   font-size: 11px;
   font-weight: bold;
   white-space: nowrap;
   position: absolute;
-  bottom: -17px;
+  bottom: -13px;
   left: 320px;
   cursor: pointer;
+}
+html body header .top .rightArea .unLog .forgotPW:hover, html body header .top .rightArea .unLog .forgotPW:active, html body header .top .rightArea .unLog .forgotPW.active {
+  color: #fc00ad;
 }
 html body header .top .rightArea .unLog button {
   width: auto;
@@ -364,6 +395,17 @@ html body header .top .rightArea .unLog button.login1 {
 html body header .top .rightArea .unLog button.login2 {
   background: #0bc7ff;
 }
+html body header .top .rightArea .unLog button:hover, html body header .top .rightArea .unLog button:active, html body header .top .rightArea .unLog button.active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+html body header .top .rightArea .unLog button:hover.login1, html body header .top .rightArea .unLog button:active.login1, html body header .top .rightArea .unLog button.active.login1 {
+  background: -webkit-gradient(linear, right top, left top, from(#6800d2), color-stop(53%, #ec00de), to(#fd0059));
+  background: linear-gradient(to left, #6800d2 0%, #ec00de 53%, #fd0059 100%);
+}
+html body header .top .rightArea .unLog button:hover.login2, html body header .top .rightArea .unLog button:active.login2, html body header .top .rightArea .unLog button.active.login2 {
+  background: #1b798a;
+}
 html body header .top .rightArea .lang {
   width: 117px;
   height: 35px;
@@ -372,6 +414,7 @@ html body header .top .rightArea .lang {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 html body header .top .rightArea .lang::before {
   content: " ";
@@ -391,6 +434,7 @@ html body header .top .rightArea .lang select {
      -moz-appearance: none;
           appearance: none;
   border: none;
+  cursor: pointer;
 }
 html body header .mq_text {
   width: 100%;
@@ -554,6 +598,7 @@ html body .mainWrap nav ul li:hover, html body .mainWrap nav ul li:active, html 
   background: linear-gradient(to top, #04defd 0%, #fc00f9 100%);
   border-radius: 5px 5px 0 0;
   border: 2px solid white;
+  text-shadow: 0 0 3px white;
 }
 html body .mainWrap nav ul li:first-child {
   margin-left: 0;
@@ -576,7 +621,7 @@ html body .mainWrap .center .wrap {
           box-sizing: border-box;
 }
 html body .mainWrap .center .wrap .side_Left {
-  width: 289px;
+  width: 305px;
   height: auto;
 }
 html body .mainWrap .center .wrap .side_Left .popBlock {
@@ -588,6 +633,10 @@ html body .mainWrap .center .wrap .side_Left .popBlock {
   margin-bottom: 19px;
   position: relative;
   cursor: pointer;
+}
+html body .mainWrap .center .wrap .side_Left .popBlock:hover, html body .mainWrap .center .wrap .side_Left .popBlock:active, html body .mainWrap .center .wrap .side_Left .popBlock.active {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
 }
 html body .mainWrap .center .wrap .side_Left .popBlock.left02 {
   position: relative;
@@ -624,7 +673,7 @@ html body .mainWrap .center .wrap .side_Left .popBlock .popInfo p span {
   margin-right: 6px;
 }
 html body .mainWrap .center .wrap .middle_Area {
-  width: 777px;
+  width: 1000px;
   height: auto;
 }
 html body .mainWrap .center .wrap .middle_Area .top {
@@ -636,49 +685,64 @@ html body .mainWrap .center .wrap .middle_Area .top {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 11px;
 }
 html body .mainWrap .center .wrap .middle_Area .top .theme {
   width: 45%;
   height: 189px;
-}
-html body .mainWrap .center .wrap .middle_Area .top .theme .gameWrap {
-  width: 100%;
-  height: auto;
   position: relative;
 }
-html body .mainWrap .center .wrap .middle_Area .top .theme .gameWrap .gWrapBox {
+html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox {
   width: 320px;
   height: 98px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
-html body .mainWrap .center .wrap .middle_Area .top .theme .gameWrap .gWrapBox li {
+html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li {
   width: 98px;
-  height: 98px;
+  height: auto;
   margin-right: 12px;
   cursor: pointer;
 }
-html body .mainWrap .center .wrap .middle_Area .top .theme .gameWrap .gWrapBox li img {
+html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li:hover, html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li:active, html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li.active {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li img {
   width: 98px;
   height: 98px;
 }
-html body .mainWrap .center .wrap .middle_Area .top .theme .gameWrap button {
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn {
   width: 39px;
   height: 39px;
   background: #0bc7ff;
   border-radius: 40px;
   padding: 5px 17px;
   position: absolute;
-  top: 29%;
-  right: 11px;
+  top: 43%;
+  right: 113px;
+  pointer-events: none;
 }
-html body .mainWrap .center .wrap .middle_Area .top .theme .gameWrap button .nextIcon {
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn .nextIcon {
   width: 7px;
   height: 21px;
   -webkit-filter: brightness(9.9);
           filter: brightness(9.9);
+}
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn.active {
+  pointer-events: visible;
 }
 html body .mainWrap .center .wrap .middle_Area .bottom {
   width: 100%;
@@ -689,8 +753,8 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap {
   height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 360px 31px 360px;
-  grid-template-columns: repeat(2, 360px);
+  -ms-grid-columns: 484px 31px 484px;
+  grid-template-columns: repeat(2, 484px);
   -ms-grid-rows: 122px 24px 122px;
   grid-template-rows: repeat(2, 122px);
   -webkit-column-gap: 31px;
@@ -715,11 +779,11 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap > *:nth-child(4) 
   -ms-grid-column: 3;
 }
 html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock {
-  width: 360px;
+  width: 484px;
   height: 122px;
   background: white;
   border-radius: 5px;
-  padding: 15px 10px;
+  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.15);
@@ -727,7 +791,32 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   cursor: pointer;
+}
+html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::before {
+  content: " ";
+  width: 26px;
+  height: 26px;
+  background: #cc00ff;
+  border-radius: 40px;
+  position: absolute;
+  top: 40%;
+  right: 25px;
+}
+html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::after {
+  content: " ";
+  width: 7px;
+  height: 13px;
+  position: absolute;
+  top: 45%;
+  right: 33px;
+  -webkit-filter: brightness(59.9);
+          filter: brightness(59.9);
+}
+html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock:hover, html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock:active, html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock.active {
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
 }
 html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock .gamePic {
   width: 92px;
@@ -766,27 +855,28 @@ html body .mainWrap .center .wrap .side_Right .searchBox {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 59px;
+  margin-bottom: 39px;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox input {
   width: 234px;
   height: 28px;
   border: none;
+  padding: 9px 16px;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox input::-webkit-input-placeholder {
-  padding: 9px 16px;
+  padding: 9px 0;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox input::-moz-placeholder {
-  padding: 9px 16px;
+  padding: 9px 0;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox input:-ms-input-placeholder {
-  padding: 9px 16px;
+  padding: 9px 0;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox input::-ms-input-placeholder {
-  padding: 9px 16px;
+  padding: 9px 0;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox input::placeholder {
-  padding: 9px 16px;
+  padding: 9px 0;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox button {
   width: 22px;
@@ -801,12 +891,27 @@ html body .mainWrap .center .wrap .side_Right .newGame {
   width: 100%;
   height: auto;
   display: table;
+  position: relative;
+}
+html body .mainWrap .center .wrap .side_Right .newGame::before {
+  content: " ";
+  width: 119px;
+  height: 75px;
+  position: absolute;
+  top: -67px;
+  right: 0;
 }
 html body .mainWrap .center .wrap .side_Right .newGame li {
   width: 100%;
   height: auto;
   position: relative;
   cursor: pointer;
+}
+html body .mainWrap .center .wrap .side_Right .newGame li:hover, html body .mainWrap .center .wrap .side_Right .newGame li:active, html body .mainWrap .center .wrap .side_Right .newGame li.active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
 }
 html body .mainWrap .center .wrap .side_Right .newGame li::before {
   content: " ";
@@ -816,6 +921,30 @@ html body .mainWrap .center .wrap .side_Right .newGame li::before {
   top: -1px;
   left: 7px;
   z-index: 5;
+  -webkit-animation: bump 1s ease-in-out infinite;
+          animation: bump 1s ease-in-out infinite;
+}
+@-webkit-keyframes bump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 3px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes bump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 3px;
+  }
+  100% {
+    top: 0;
+  }
 }
 html body .mainWrap .center .wrap .side_Right .newGame li .newgame {
   width: 280px;
@@ -832,7 +961,7 @@ html body .mainWrap .center .wrap .titleArea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 html body .mainWrap .center .wrap .titleArea .themeTitle {
   color: #000;
@@ -868,12 +997,16 @@ html body .mainWrap .center .wrap .titleArea button .arrowIcon {
   width: 7px;
   height: 21px;
 }
+html body .mainWrap .center .wrap .titleArea.right {
+  margin-bottom: 7px;
+}
 html body .mainWrap .center .bottomAll {
   width: 1600px;
   height: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 50px 0;
 }
 html body .mainWrap .center .bottomAll button {
   width: 254px;
@@ -884,7 +1017,7 @@ html body .mainWrap .center .bottomAll button {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  padding-left: 30px;
+  padding-left: 35px;
   margin: 0 auto;
   position: relative;
 }
@@ -904,25 +1037,108 @@ html body .mainWrap .center .bottomAll button::after {
   top: 20px;
   right: 32px;
 }
+html body .mainWrap .center .bottomAll button:hover, html body .mainWrap .center .bottomAll button:active, html body .mainWrap .center .bottomAll button.active {
+  text-shadow: 0 0 3px white;
+}
+html body .mainWrap .center .bottomAll button:hover::before, html body .mainWrap .center .bottomAll button:active::before, html body .mainWrap .center .bottomAll button.active::before {
+  -webkit-transform: translate(8px, -1px) scale(1.02);
+          transform: translate(8px, -1px) scale(1.02);
+  -webkit-transition: 0.5s 0 ease-in-out;
+  transition: 0.5s 0 ease-in-out;
+}
+html body .mainWrap .center .bottomAll button:hover::after, html body .mainWrap .center .bottomAll button:active::after, html body .mainWrap .center .bottomAll button.active::after {
+  -webkit-animation: down 1s ease-in-out infinite;
+          animation: down 1s ease-in-out infinite;
+}
+@-webkit-keyframes down {
+  0% {
+    top: 20px;
+  }
+  50% {
+    top: 23px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+@keyframes down {
+  0% {
+    top: 20px;
+  }
+  50% {
+    top: 23px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+html body aside {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+html body aside button {
+  display: fixed;
+  width: 80px;
+  height: 80px;
+  background: #fc00ad;
+  color: white;
+  font-size: 22px;
+  border-radius: 20px;
+  padding: 25px 0 0 0;
+  position: absolute;
+  top: -52px;
+  right: 71px;
+  z-index: 50;
+}
+html body aside button .backtop {
+  width: 21px;
+  height: 13px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
 html body footer {
   width: 100%;
   height: auto;
+  background: #ececec;
+  position: relative;
+}
+html body footer::before {
+  content: " ";
+  width: 492px;
+  height: 706px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+html body footer::after {
+  content: " ";
+  width: 374px;
+  height: 446px;
+  position: absolute;
+  bottom: 117px;
+  right: 0;
 }
 html body footer .center {
   width: 950px;
   height: 100%;
-  margin: 0 auto 131px;
+  padding: 108px 0 131px 0;
+  margin: 0 auto;
+  position: relative;
 }
 html body footer .center ul {
   width: 1036px;
   height: auto;
-  margin: 110px auto 56px;
+  padding: 110px auto 56px;
+  margin: 0 0 56px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 html body footer .center ul li {
   width: auto;
@@ -954,27 +1170,53 @@ html body footer .center ul li p.page span:hover, html body footer .center ul li
 }
 html body footer .center ul li p.page span:hover::before, html body footer .center ul li p.page span:active::before, html body footer .center ul li p.page span.active::before {
   content: " ";
-  width: 41px;
-  height: 41px;
+  width: 50px;
+  height: 50px;
   background: #0bc7ff;
   border-radius: 41px;
   position: absolute;
-  top: -5px;
-  left: -10px;
+  top: -9px;
+  left: -55px;
 }
 html body footer .center ul li p.page span:hover::after, html body footer .center ul li p.page span:active::after, html body footer .center ul li p.page span.active::after {
   content: " ";
   width: 41px;
   height: 37px;
   position: absolute;
-  top: -5px;
-  left: -10px;
+  top: -1px;
+  left: -50px;
 }
 html body footer .center button {
   width: 950px;
   height: 75px;
   background: -webkit-gradient(linear, left top, right top, from(#6800d2), color-stop(53%, #ec00de), to(#fd0059));
   background: linear-gradient(to right, #6800d2 0%, #ec00de 53%, #fd0059 100%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50px;
+  position: relative;
+}
+html body footer .center button:hover, html body footer .center button:active, html body footer .center button.active {
+  text-shadow: 0 0 3px white;
+}
+html body footer .center button:hover::before, html body footer .center button:active::before, html body footer .center button.active::before {
+  content: " ";
+  width: 961px;
+  height: 84px;
+  border: 5px solid #9d0000;
+  border-radius: 50px;
+  position: absolute;
+  top: -9px;
+  left: -10px;
+}
+html body footer .center button:hover::after, html body footer .center button:active::after, html body footer .center button.active::after {
+  content: " ";
+  width: 167px;
+  height: 118px;
+  position: absolute;
+  top: -55px;
+  right: -50px;
 }
 html body main {
   width: 100%;

@@ -113,6 +113,7 @@
           background: $navHov;
           border-radius: 5px 5px 0 0;
           border: 2px solid $liHovBorder;
+          text-shadow: 0 0 3px $lightfont;
         }
 
         &:first-child {
@@ -135,7 +136,7 @@
       box-sizing: border-box;
 
       .side_Left {
-        width: 289px;
+        width: 305px;
         height: auto;
 
         .popBlock {
@@ -146,6 +147,10 @@
           margin-bottom: 19px;
           position: relative;
           cursor: pointer;
+
+          &:hover,&:active,&.active {
+            filter: brightness(0.9);
+          }
 
           &.left02 {
             position: relative;
@@ -189,7 +194,7 @@
       }
 
       .middle_Area {
-        width: 777px;
+        width: 1000px;
         height: auto;
 
         .top {
@@ -197,50 +202,63 @@
           height: 190px;
           display: flex;
           justify-content: space-between;
+          margin-bottom: 11px;
 
           .theme {
             width: 45%;
             height: 189px;
+            position: relative;
 
-            .gameWrap {
-              width: 100%;
-              height: auto;
+            .gWrapBox {
+              width: 320px;
+              height: 98px;
+              overflow: hidden;
+              display: flex;
               position: relative;
 
-              .gWrapBox {
-                width: 320px;
-                height: 98px;
-                overflow: hidden;
+              .gameWrap {
+                width: 100%;
+                height: auto;
                 display: flex;
-
+                transition: 0.5s all;
+  
                 li {
                   width: 98px;
-                  height: 98px;
+                  height: auto;
                   margin-right: 12px;
                   cursor: pointer;
-
+  
+                  &:hover,&:active,&.active {
+                    transform: scale(1.15);
+                  }
+  
                   img {
                     width: 98px;
                     height: 98px;
                   }
                 }
               }
+            }
 
-              button {
-                width: 39px;
-                height: 39px;
-                background: $nextBtn_BG;
-                border-radius: 40px;
-                padding: 5px 17px;
-                position: absolute;
-                top: 29%;
-                right: 11px;
+            .nextBtn {
+              width: 39px;
+              height: 39px;
+              background: $nextBtn_BG;
+              border-radius: 40px;
+              padding: 5px 17px;
+              position: absolute;
+              top: 43%;
+              right: 113px;
+              pointer-events: none;
 
-                .nextIcon {
-                  width: 7px;
-                  height: 21px;
-                  filter: brightness(9.9);
-                }
+              .nextIcon {
+                width: 7px;
+                height: 21px;
+                filter: brightness(9.9);
+              }
+
+              &.active {
+                pointer-events: visible;
               }
             }
           }
@@ -254,21 +272,47 @@
             width: 100%;
             height: auto;
             display: grid;
-            grid-template-columns: repeat(2, 360px);
+            grid-template-columns: repeat(2, 484px);
             grid-template-rows: repeat(2, 122px);
             column-gap: 31px;
             row-gap: 24px;
 
             .gameBlock {
-              width: 360px;
+              width: 484px;
               height: 122px;
               background: $gameBlock_BG;
               border-radius: 5px;
-              padding: 15px 10px;
+              padding: 15px;
               box-sizing: border-box;
               box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 15%);
               display: flex;
+              position: relative;
               cursor: pointer;
+
+              &::before {
+                content: " ";
+                width: 26px;
+                height: 26px;
+                background: $tagfont;
+                border-radius: 40px;
+                position: absolute;
+                top: 40%;
+                right: 25px;
+              }
+
+              &::after {
+                content: " ";
+                width: 7px;
+                height: 13px;
+                position: absolute;
+                top: 45%;
+                right: 33px;
+                filter: brightness(59.9);
+              }
+
+              &:hover,&:active,&.active {
+                filter: brightness(0.95);
+              }
 
               .gamePic {
                 width: 92px;
@@ -310,14 +354,16 @@
           border-radius: 5px;
           display: flex;
           justify-content: space-between;
-          margin-bottom: 59px;
+          margin-bottom: 39px;
 
           input {
             width: 234px;
             height: 28px;
             border: none;
+            padding: 9px 16px;
+
             &::placeholder {
-              padding: 9px 16px;
+              padding: 9px 0;
             }
           }
 
@@ -337,6 +383,16 @@
           width: 100%;
           height: auto;
           display: table; 
+          position: relative;
+
+          &::before {
+            content: " ";
+            width: 119px;
+            height: 75px;
+            position: absolute;
+            top: -67px;
+            right: 0;
+          }
 
           li {
             width: 100%;
@@ -344,6 +400,12 @@
             position: relative;
             cursor: pointer;
 
+            &:hover,&:active,&.active {
+              transform: scale(1.1);
+              filter: brightness(0.9);
+            }
+
+            //新登場
             &::before {
               content: " ";
               width: 136px;
@@ -352,8 +414,25 @@
               top: -1px;
               left: 7px;
               z-index: 5;
+              animation: bump 1s ease-in-out infinite;
+              
+              @keyframes bump {
+
+                0% {
+                  top: 0;
+                }
+                
+                50% {
+                  top: 3px;
+                }
+            
+                100% {
+                  top: 0;
+                }
+              }
             }
 
+            //圖片尺寸
             .newgame {
               width: 280px;
               height: 139px;
@@ -369,7 +448,7 @@
         height: 36px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
 
         .themeTitle {
           color: $mainfont;
@@ -404,6 +483,10 @@
             height: 21px;
           }
         }
+
+        &.right {
+          margin-bottom: 7px;
+        }
       }
     }
 
@@ -411,6 +494,7 @@
       width: 1600px;
       height: 68px;
       display: flex;
+      margin: 50px 0;
 
       button {
         width: 254px;
@@ -421,7 +505,7 @@
         font-size: 18px;
         font-weight: bold;
         text-align: center;
-        padding-left: 30px;
+        padding-left: 35px;
         margin: 0 auto;
         position: relative;
 
@@ -441,6 +525,34 @@
           position: absolute;
           top: 20px;
           right: 32px;
+        }
+
+        &:hover,&:active,&.active {
+          text-shadow: 0 0 3px $lightfont;
+
+          &::before {
+            transform: translate(8px, -1px) scale(1.02);
+            transition: 0.5s 0 ease-in-out;
+          }
+
+          &::after {
+            animation: down 1s  ease-in-out infinite;
+
+            @keyframes down {
+
+              0% {
+                top: 20px;
+              }
+              
+              50% {
+                top: 23px;
+              }
+          
+              100% {
+                top: 20px;
+              }
+            }
+          }
         }
       }
     }

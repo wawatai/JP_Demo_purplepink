@@ -1,84 +1,139 @@
 footer {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  background: $footerBG;
+  position: relative;
 
-    .center {
-        width: 950px;
+  &::before {
+    content: " ";
+    width: 492px;
+    height: 706px;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+  }
+
+  &::after {
+    content: " ";
+    width: 374px;
+    height: 446px;
+    position: absolute;
+    bottom: 117px;
+    right: 0;
+  }
+
+  .center {
+    width: 950px;
+    height: 100%;
+    padding: 108px 0 131px 0;
+    margin: 0 auto;
+    position: relative;
+
+    ul {
+      width: 1036px;
+      height: auto;
+      padding: 110px auto 56px;
+      margin: 0 0 56px 0;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      li {
+        width: auto;
         height: 100%;
-        margin: 0 auto 131px;
 
-        ul {
-            width: 1036px;
-            height: auto;
-            margin: 110px auto 56px;
-            display: flex;
-            justify-content: space-between;
-    
-            li {
-                width: auto;
-                height: 100%;
-    
-                p {
-                    color: $footerFont;
-                    font-size: 22px;
-                    font-weight: bold;
-                    margin-bottom: 29px;
-    
-                    &.title {
-                        color: $subfont;
-                        margin-bottom: 45px;
-                    }
-                    
-    
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
+        p {
+          color: $footerFont;
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 29px;
 
-                    &.page {
+          &.title {
+            color: $subfont;
+            margin-bottom: 45px;
+          }
 
-                        span {
-                            display: inline;
-                            position: relative;
+          &:last-child {
+            margin-bottom: 0;
+          }
 
-                            a {
-                                color: $mainfont;
-                                text-decoration: none;
-                            }
+          &.page {
+            span {
+              display: inline;
+              position: relative;
 
-                            &:hover, &:active, &.active {
-                                border-bottom: 2px solid $pageHovline;
+              a {
+                color: $mainfont;
+                text-decoration: none;
+              }
 
-                                &::before {
-                                    content: " ";
-                                    width: 41px;
-                                    height: 41px;
-                                    background: $pageHovBG;
-                                    border-radius: 41px;
-                                    position: absolute;
-                                    top: -5px;
-                                    left: -10px;
-                                }
+              &:hover,
+              &:active,
+              &.active {
+                border-bottom: 2px solid $pageHovline;
 
-                                &::after {
-                                    content: " ";
-                                    width: 41px;
-                                    height: 37px;
-                                    position: absolute;
-                                    top: -5px;
-                                    left: -10px;
-                                }
-                            }
-                        }
-
-                    } 
+                &::before {
+                  content: " ";
+                  width: 50px;
+                  height: 50px;
+                  background: $pageHovBG;
+                  border-radius: 41px;
+                  position: absolute;
+                  top: -9px;
+                  left: -55px;
                 }
+
+                &::after {
+                  content: " ";
+                  width: 41px;
+                  height: 37px;
+                  position: absolute;
+                  top: -1px;
+                  left: -50px;
+                }
+              }
             }
+          }
         }
-    
-        button {
-            width: 950px;
-            height: 75px;
-            background: $cs24hrBtnBg;
-        }
+      }
     }
+    //cs24hr按鈕
+    button {
+      width: 950px;
+      height: 75px;
+      background: $cs24hrBtnBg;
+      color: $lightfont;
+      font-size: 22px;
+      font-weight: bold;
+      border-radius: 50px;
+      position: relative;
+    
+
+      &:hover,
+      &:active,
+      &.active {
+        text-shadow: 0 0 3px $lightfont;
+        
+        &::before {
+          content: " ";
+          width: 961px;
+          height: 84px;
+          border: 5px solid $cs24hrBtnBorder;
+          border-radius: 50px;
+          position: absolute;
+          top: -9px;
+          left: -10px;
+        }
+
+        &::after {
+            content: " ";
+            width: 167px;
+            height: 118px;
+            position: absolute;
+            top: -55px;
+            right: -50px;
+        }
+      }
+    }
+  }
 }

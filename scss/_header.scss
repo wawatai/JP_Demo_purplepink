@@ -23,6 +23,7 @@ header {
       text-align: center;
       padding: 15px 0;
       box-sizing: border-box;
+      cursor: pointer;
     }
 
     .rightArea {
@@ -47,24 +48,29 @@ header {
           background: $inputBG;
           border: none;
           border-radius: 5px;
+          caret-color: $lightfont;
+          padding: 14px 20px;
 
           &::placeholder {
             color: $lightfont;
-            padding: 14px 20px;
-            box-sizing: border-box;
+            padding: 14px 0;
+            box-sizing: border-box; 
           }
         }
 
-        &::before {
-          content: "パスワードをお忘れですか？";
+        .forgotPW {
           color: $remind;
           font-size: 11px;
           font-weight: bold;
           white-space: nowrap;
           position: absolute;
-          bottom: -17px;
+          bottom: -13px;
           left: 320px;
           cursor: pointer;
+
+          &:hover,&:active,&.active {
+            color: $subfont;
+          }
         }
 
         // 登入按鈕
@@ -87,6 +93,18 @@ header {
           &.login2 {
             background: $logBtn2_BG;
           }
+
+          &:hover,&:active,&.active {
+            transform: scale(1.1);
+
+            &.login1 {
+              background: $logBtn1HOV_BG;
+            }
+
+            &.login2 {
+              background: $logBtn2HOV_BG;
+            }
+          }
         }
       }
       // 語言列
@@ -96,6 +114,7 @@ header {
         color: $mainfont;
         display: flex;
         position: relative;
+        cursor: pointer;
 
         &::before {
           content: " ";
@@ -114,6 +133,7 @@ header {
           padding: 0 25px;
           appearance: none;
           border: none;
+          cursor: pointer;
         }
       }
     }
