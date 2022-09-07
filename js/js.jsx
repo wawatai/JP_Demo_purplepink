@@ -87,5 +87,5 @@ $(function(){
         $body.delay('0').animate({
             scrollTop: 0
         },500)
-    })
+    }) 
 })
