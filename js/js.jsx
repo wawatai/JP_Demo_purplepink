@@ -12,7 +12,7 @@ $(document).on('ready', function() {
 
 //gwrapBox
 $(function(){
-    $(".gWrapBox .gameWrap").each(function(){
+    $(".gWrapBox .gameWrap.hotgame").each(function(){
         if($(this).find("li").length > 2)
         {
             $(".nextBtn")
@@ -20,16 +20,24 @@ $(function(){
         }
     })
 
+    $(".gWrapBox .gameWrap.classic").each(function(){
+        if($(this).find("li").length > 2)
+        {
+            $(".nextBtnC")
+            .addClass("active");
+        }
+    })
+
     var hotN = 0;
-    var hotN = 0;
+    var clasN = 0;
 
     $(".nextBtn").on("click",function(){
-        var total = $(this).prev(".gWrapBox").find("li").length;
+        var total = $(this).prev(".gameWrap.hotgame").find("li").length;
         var n = Math.round((total - 3));
         
         hotN ++;
 
-        $(".gWrapBox .gameWrap")
+        $(".gWrapBox .gameWrap.hotgame")
         .css("transform","translateX("+ (-110 * hotN) +"px)");
 
         if(hotN == n)
@@ -40,6 +48,24 @@ $(function(){
             .removeClass("active");
         }
     })
+
+     $(".nextBtnC").on("click",function(){
+         var total = $(this).prev(".gameWrap.classic").find("li").length;
+         var n = Math.round((total - 3));
+        
+         clasN ++;
+
+         $(".gWrapBox .gameWrap.classic")
+         .css("transform","translateX("+ (-110 * clasN) +"px)");
+
+         if(clasN == n)
+         {
+             clasN == n;
+
+             $(this)
+             .removeClass("active");
+         }
+     })
 })
 
 

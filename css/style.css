@@ -724,7 +724,8 @@ html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap l
   width: 98px;
   height: 98px;
 }
-html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn {
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn,
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
   width: 39px;
   height: 39px;
   background: #0bc7ff;
@@ -735,13 +736,15 @@ html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn {
   right: 113px;
   pointer-events: none;
 }
-html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn .nextIcon {
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn .nextIcon,
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC .nextIcon {
   width: 7px;
   height: 21px;
   -webkit-filter: brightness(9.9);
           filter: brightness(9.9);
 }
-html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn.active {
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn.active,
+html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC.active {
   pointer-events: visible;
 }
 html body .mainWrap .center .wrap .middle_Area .bottom {
