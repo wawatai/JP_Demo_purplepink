@@ -66,12 +66,12 @@ aside .backtop {
   background-size: contain;
 }
 
-footer::before {
+footer .leftPic {
   background: url(../img/footerPic01.png) no-repeat;
   background-size: contain;
 }
 
-footer::after {
+footer .rightPic {
   background: url(../img/footerPic02.png) no-repeat;
   background-size: contain;
 }
@@ -304,7 +304,8 @@ html body header .top .logo {
   cursor: pointer;
 }
 html body header .top .rightArea {
-  width: 930px;
+  width: 797px;
+  min-width: 793px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +370,7 @@ html body header .top .rightArea .unLog .forgotPW {
   white-space: nowrap;
   position: absolute;
   bottom: -13px;
-  left: 320px;
+  left: 289px;
   cursor: pointer;
 }
 html body header .top .rightArea .unLog .forgotPW:hover, html body header .top .rightArea .unLog .forgotPW:active, html body header .top .rightArea .unLog .forgotPW.active {
@@ -383,7 +384,7 @@ html body header .top .rightArea .unLog button {
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
-  padding: 0 43px;
+  padding: 0 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
@@ -508,6 +509,7 @@ html body .mainWrap {
 }
 html body .mainWrap .ad {
   width: 100%;
+  min-width: 1000px;
   position: relative;
 }
 html body .mainWrap .ad .single-item {
@@ -604,7 +606,8 @@ html body .mainWrap nav ul li:first-child {
   margin-left: 0;
 }
 html body .mainWrap .center {
-  width: 1666px;
+  max-width: 1666px;
+  width: 90%;
   margin: 0 auto;
 }
 html body .mainWrap .center .wrap {
@@ -688,12 +691,12 @@ html body .mainWrap .center .wrap .middle_Area .top {
   margin-bottom: 11px;
 }
 html body .mainWrap .center .wrap .middle_Area .top .theme {
-  width: 45%;
+  width: 48%;
   height: 189px;
   position: relative;
 }
 html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox {
-  width: 320px;
+  width: 67%;
   height: 98px;
   overflow: hidden;
   display: -webkit-box;
@@ -733,7 +736,7 @@ html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
   padding: 5px 17px;
   position: absolute;
   top: 43%;
-  right: 113px;
+  right: 29%;
   pointer-events: none;
 }
 html body .mainWrap .center .wrap .middle_Area .top .theme .nextBtn .nextIcon,
@@ -756,13 +759,13 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap {
   height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 484px 31px 484px;
-  grid-template-columns: repeat(2, 484px);
+  -ms-grid-columns: 48% 26px 48%;
+  grid-template-columns: repeat(2, 48%);
   -ms-grid-rows: 122px 24px 122px;
   grid-template-rows: repeat(2, 122px);
-  -webkit-column-gap: 31px;
-     -moz-column-gap: 31px;
-          column-gap: 31px;
+  -webkit-column-gap: 26px;
+     -moz-column-gap: 26px;
+          column-gap: 26px;
   row-gap: 24px;
 }
 html body .mainWrap .center .wrap .middle_Area .bottom .inWrap > *:nth-child(1) {
@@ -782,7 +785,7 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap > *:nth-child(4) 
   -ms-grid-column: 3;
 }
 html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock {
-  width: 484px;
+  width: 100%;
   height: 122px;
   background: white;
   border-radius: 5px;
@@ -1009,7 +1012,6 @@ html body .mainWrap .center .bottomAll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0;
 }
 html body .mainWrap .center .bottomAll button {
   width: 254px;
@@ -1105,34 +1107,31 @@ html body footer {
   width: 100%;
   height: auto;
   background: #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
 }
-html body footer::before {
-  content: " ";
+html body footer .leftPic {
   width: 492px;
-  height: 706px;
-  position: absolute;
-  bottom: 0;
-  left: -20px;
+  height: 494px;
+  margin-top: 36px;
 }
-html body footer::after {
-  content: " ";
+html body footer .rightPic {
   width: 374px;
   height: 446px;
-  position: absolute;
-  bottom: 117px;
-  right: 0;
 }
 html body footer .center {
-  width: 950px;
+  width: 100%;
   height: 100%;
-  padding: 108px 0 131px 0;
+  padding: 81px 0 20px 0;
   margin: 0 auto;
   position: relative;
   z-index: 5;
 }
 html body footer .center ul {
-  width: 1036px;
+  width: 100%;
+  min-width: 682px;
   height: auto;
   padding: 110px auto 56px;
   margin: 0 0 56px 0;
@@ -1191,7 +1190,7 @@ html body footer .center ul li p.page span:hover::after, html body footer .cente
   left: -50px;
 }
 html body footer .center button {
-  width: 950px;
+  width: 70%;
   height: 75px;
   background: -webkit-gradient(linear, left top, right top, from(#6800d2), color-stop(53%, #ec00de), to(#fd0059));
   background: linear-gradient(to right, #6800d2 0%, #ec00de 53%, #fd0059 100%);
@@ -1200,13 +1199,21 @@ html body footer .center button {
   font-weight: bold;
   border-radius: 50px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+html body footer .center button span {
+  display: block;
+  margin: auto;
 }
 html body footer .center button:hover, html body footer .center button:active, html body footer .center button.active {
   text-shadow: 0 0 3px white;
 }
 html body footer .center button:hover::before, html body footer .center button:active::before, html body footer .center button.active::before {
   content: " ";
-  width: 961px;
+  width: 102%;
   height: 84px;
   border: 5px solid #9d0000;
   border-radius: 50px;
@@ -1221,6 +1228,316 @@ html body footer .center button:hover::after, html body footer .center button:ac
   position: absolute;
   top: -55px;
   right: -50px;
+}
+@media only screen and (max-width: 1812px) {
+  html body html {
+    width: 100%;
+    height: 100%;
+  }
+  html body main {
+    width: 1675px;
+  }
+  html body main .mainWrap {
+    width: 100%;
+  }
+  html body main .mainWrap .center {
+    width: 90%;
+    height: auto;
+  }
+  html body main .mainWrap .center .wrap {
+    width: 100%;
+    height: auto;
+    padding: 104px 20px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  html body main .mainWrap .center .wrap .side_Left {
+    width: 20%;
+  }
+  html body main .mainWrap .center .wrap .middle_Area {
+    width: 55%;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top {
+    width: 100%;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top .theme {
+    width: 45%;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox {
+    width: 85%;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtn,
+html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
+    right: 12%;
+  }
+  html body main .mainWrap .center .wrap .side_Right {
+    width: 22%;
+  }
+  html body main .mainWrap .center .wrap .side_Right .newGame li .newgame {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1795px) {
+  html body .mainWrap {
+    width: 100%;
+  }
+  html body .mainWrap .center {
+    width: 90%;
+    height: auto;
+  }
+  html body .mainWrap .center .wrap {
+    width: 100%;
+    height: auto;
+    padding: 104px 20px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  html body .mainWrap .center .wrap .side_Left {
+    width: 20%;
+  }
+  html body .mainWrap .center .wrap .side_Left .popBlock {
+    width: 100%;
+    min-width: 245px;
+  }
+  html body .mainWrap .center .wrap .middle_Area {
+    width: 55%;
+  }
+  html body .mainWrap .center .wrap .middle_Area .gameInfo {
+    max-width: 223px;
+  }
+  html body .mainWrap .center .wrap .side_Right {
+    width: 22%;
+  }
+  html body footer .leftPic {
+    height: 470px;
+  }
+}
+@media only screen and (max-width: 1703px) {
+  html body html {
+    width: 1703px;
+  }
+  html body footer .leftPic {
+    margin: 48px 0 0;
+  }
+}
+@media only screen and (max-width: 1516px) {
+  html body .side_Left {
+    width: 261px;
+  }
+  html body .side_Left .popBlock {
+    width: 100%;
+    min-width: 245px;
+  }
+  html body .middle_Area {
+    width: 55%;
+  }
+  html body .middle_Area .gameInfo {
+    max-width: 194px;
+  }
+  html body .side_Right {
+    width: 288px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html body html {
+    width: 1000px;
+    height: 100%;
+  }
+  html body header {
+    width: 1000px;
+  }
+  html body header .top {
+    width: 100%;
+    padding: 0 9px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  html body header .top .rightArea {
+    width: 753px;
+  }
+  html body header .mq_text {
+    width: 100%;
+    padding: 7px 13px;
+  }
+  html body header .mq_text .mqBox {
+    width: 100%;
+    height: auto;
+  }
+  html body header .mq_text .mqBox .textBox {
+    width: 62%;
+    height: 100%;
+  }
+  html body main {
+    width: 1000px;
+    height: auto;
+  }
+  html body main .mainWrap {
+    width: 100%;
+  }
+  html body main .mainWrap .center {
+    width: 100%;
+  }
+  html body main .mainWrap .center .wrap {
+    width: 100%;
+    height: auto;
+    padding: 43px 25px 0;
+    display: -ms-grid;
+    display: grid;
+  }
+  html body main .mainWrap .center .wrap .middle_Area {
+    width: 100%;
+    height: auto;
+    margin: 0 0 43px;
+    padding: 0 5px 0 0;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top .theme {
+    width: 48%;
+    height: auto;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox button.nextBtn, html body main .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox button.nextBtnC {
+    right: 87px;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .bottom {
+    width: 100%;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .bottom .inWrap {
+    width: 100%;
+    height: auto;
+    -ms-grid-columns: 454px 33px 454px;
+    grid-template-columns: repeat(2, 454px);
+    -webkit-column-gap: 33px;
+       -moz-column-gap: 33px;
+            column-gap: 33px;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock {
+    width: 454px;
+    height: 122px;
+  }
+  html body main .mainWrap .center .wrap .side_Right {
+    width: 943px;
+    height: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html body main .mainWrap .center .wrap .side_Right .sR_rwd {
+    width: 100%;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+  }
+  html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame {
+    width: 100%;
+    height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame::before {
+    top: -66px;
+  }
+  html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame .newgame {
+    width: 314px;
+    height: 139px;
+  }
+  html body main .mainWrap .center .wrap .side_Right .sR_rwd .searchBox {
+    width: 100%;
+    height: 42px;
+    margin: 20px 0 30px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  html body main .mainWrap .center .wrap .side_Right .sR_rwd .searchBox input {
+    width: 97%;
+    height: 28px;
+  }
+  html body main .mainWrap .center .wrap .side_Left {
+    width: 100%;
+    height: auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 8px 0 0;
+    order: 2;
+  }
+  html body main .mainWrap .center .wrap .side_Left .popBlock {
+    width: 48%;
+    height: 287px;
+  }
+  html body main .mainWrap .center .wrap .side_Left .popBlock .popInfo {
+    top: 223px;
+  }
+  html body main .mainWrap .center .wrap .side_Left .popBlock.left02::before {
+    bottom: 64px;
+  }
+  html body main .mainWrap .center .bottomAll {
+    width: 100%;
+    margin: 28px 0;
+  }
+  html body main aside button {
+    right: 16px;
+  }
+  html body footer {
+    width: 100%;
+    height: 558px;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  html body footer .leftPic {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  html body footer .center {
+    width: 100%;
+    height: auto;
+  }
+  html body footer .center ul li p {
+    font-size: 20px;
+  }
+  html body footer .center button {
+    width: 50%;
+    height: 65px;
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+  html body footer .center button:hover::before, html body footer .center button:active::before, html body footer .center button.active::before {
+    content: " ";
+    width: 103%;
+    height: 80px;
+    border: 5px solid #9d0000;
+    border-radius: 50px;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+  }
+  html body footer .center button:hover::after, html body footer .center button:active::after, html body footer .center button.active::after {
+    content: " ";
+    width: 167px;
+    height: 118px;
+    position: absolute;
+    top: -55px;
+    right: -50px;
+  }
+  html body footer .rightPic {
+    width: 0;
+    height: 0;
+    display: none;
+  }
 }
 html body main {
   width: 100%;

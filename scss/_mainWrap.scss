@@ -7,6 +7,7 @@
   //輪播圖
   .ad {
     width: 100%;
+    min-width: 1000px;
     position: relative;
 
     .single-item {
@@ -124,7 +125,8 @@
   }
 
   .center {
-    width: 1666px;
+    max-width: 1666px;
+    width: 90%;
     margin: 0 auto;
 
     .wrap {
@@ -205,12 +207,12 @@
           margin-bottom: 11px;
 
           .theme {
-            width: 45%;
+            width: 48%;
             height: 189px;
             position: relative;
 
             .gWrapBox {
-              width: 320px;
+              width: 67%;
               height: 98px;
               overflow: hidden;
               display: flex;
@@ -249,7 +251,7 @@
               padding: 5px 17px;
               position: absolute;
               top: 43%;
-              right: 113px;
+              right: 29%;
               pointer-events: none;
 
               .nextIcon {
@@ -273,13 +275,13 @@
             width: 100%;
             height: auto;
             display: grid;
-            grid-template-columns: repeat(2, 484px);
+            grid-template-columns: repeat(2, 48%);
             grid-template-rows: repeat(2, 122px);
-            column-gap: 31px;
+            column-gap: 26px;
             row-gap: 24px;
 
             .gameBlock {
-              width: 484px;
+              width: 100%;
               height: 122px;
               background: $gameBlock_BG;
               border-radius: 5px;
@@ -495,7 +497,6 @@
       width: 1600px;
       height: 68px;
       display: flex;
-      margin: 50px 0;
 
       button {
         width: 254px;

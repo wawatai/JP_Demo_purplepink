@@ -68,12 +68,12 @@ aside .backtop {
     background-size: contain;
 }
 
-footer::before{
+footer .leftPic {
     background: url(../img/footerPic01.png) no-repeat;
     background-size: contain;
 }
 
-footer::after{
+footer .rightPic {
     background: url(../img/footerPic02.png) no-repeat;
     background-size: contain;
 }
