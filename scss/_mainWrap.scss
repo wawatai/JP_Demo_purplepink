@@ -133,20 +133,22 @@
       width: 100%;
       height: auto;
       display: flex;
-      justify-content: space-between;
       padding: 104px 0 0;
       box-sizing: border-box;
 
       .side_Left {
-        width: 305px;
+        width: 20%;
+        min-width: 255px;
         height: auto;
+        margin-right: 2%;
 
         .popBlock {
-          width: 289px;
+          width: 100%;
+          min-width: 255px;
           height: 251px;
           border-radius: 5px;
           box-shadow: 5px 5px 5px 1px rgb(0, 0, 0, 15%);
-          margin-bottom: 19px;
+          margin: 0 0 19px;
           position: relative;
           cursor: pointer;
 
@@ -169,10 +171,11 @@
 
           .popInfo {
             width: 100%;
+            min-width: 255px;
             height: 69px;
             border-radius: 0 0 5px 5px;
             background: $recInfoBG;
-            padding: 28px 25px;
+            display: flex;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -182,6 +185,7 @@
               font-size: 14px;
               font-weight: bold;
               white-space: nowrap;
+              margin: auto;
               position: relative;
               z-index: 5;
 
@@ -196,8 +200,9 @@
       }
 
       .middle_Area {
-        width: 1000px;
+        width: 58%;
         height: auto;
+        margin-right: 2%;
 
         .top {
           width: 100%;
@@ -282,10 +287,11 @@
 
             .gameBlock {
               width: 100%;
+              //min-width: 233px;
               height: 122px;
               background: $gameBlock_BG;
               border-radius: 5px;
-              padding: 15px;
+              padding: 15px 70px 15px 15px;
               box-sizing: border-box;
               box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 15%);
               display: flex;
@@ -311,7 +317,14 @@
                 top: 45%;
                 right: 33px;
                 filter: brightness(59.9);
-              }
+                animation: xmove 1s ease-in-out infinite;
+                  @keyframes xmove {
+                    from { right: 30px; }
+                    50%  { right: 33px; } 
+                    to   { right: 35px; }
+                  }
+                }
+              
 
               &:hover,&:active,&.active {
                 filter: brightness(0.95);
@@ -346,6 +359,7 @@
 
       .side_Right {
         width: 280px;
+        min-width: 187px;
         height: auto;
 
         .searchBox {
@@ -360,7 +374,7 @@
           margin-bottom: 39px;
 
           input {
-            width: 234px;
+            width: 88%;
             height: 28px;
             border: none;
             padding: 9px 16px;
@@ -494,8 +508,8 @@
     }
 
     .bottomAll {
-      width: 1600px;
-      height: 68px;
+      width: 100%;
+      height: 150px;
       display: flex;
 
       button {
@@ -508,7 +522,7 @@
         font-weight: bold;
         text-align: center;
         padding-left: 35px;
-        margin: 0 auto;
+        margin: auto;
         position: relative;
 
         &::before {

@@ -616,24 +616,24 @@ html body .mainWrap .center .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 104px 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 html body .mainWrap .center .wrap .side_Left {
-  width: 305px;
+  width: 20%;
+  min-width: 255px;
   height: auto;
+  margin-right: 2%;
 }
 html body .mainWrap .center .wrap .side_Left .popBlock {
-  width: 289px;
+  width: 100%;
+  min-width: 255px;
   height: 251px;
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.15);
           box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.15);
-  margin-bottom: 19px;
+  margin: 0 0 19px;
   position: relative;
   cursor: pointer;
 }
@@ -654,10 +654,13 @@ html body .mainWrap .center .wrap .side_Left .popBlock.left02::before {
 }
 html body .mainWrap .center .wrap .side_Left .popBlock .popInfo {
   width: 100%;
+  min-width: 255px;
   height: 69px;
   border-radius: 0 0 5px 5px;
   background: #ececec;
-  padding: 28px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -667,6 +670,7 @@ html body .mainWrap .center .wrap .side_Left .popBlock .popInfo p {
   font-size: 14px;
   font-weight: bold;
   white-space: nowrap;
+  margin: auto;
   position: relative;
   z-index: 5;
 }
@@ -676,8 +680,9 @@ html body .mainWrap .center .wrap .side_Left .popBlock .popInfo p span {
   margin-right: 6px;
 }
 html body .mainWrap .center .wrap .middle_Area {
-  width: 1000px;
+  width: 58%;
   height: auto;
+  margin-right: 2%;
 }
 html body .mainWrap .center .wrap .middle_Area .top {
   width: 100%;
@@ -789,7 +794,7 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock {
   height: 122px;
   background: white;
   border-radius: 5px;
-  padding: 15px;
+  padding: 15px 70px 15px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.15);
@@ -819,6 +824,30 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::after
   right: 33px;
   -webkit-filter: brightness(59.9);
           filter: brightness(59.9);
+  -webkit-animation: xmove 1s ease-in-out infinite;
+          animation: xmove 1s ease-in-out infinite;
+}
+@-webkit-keyframes xmove {
+  from {
+    right: 30px;
+  }
+  50% {
+    right: 33px;
+  }
+  to {
+    right: 35px;
+  }
+}
+@keyframes xmove {
+  from {
+    right: 30px;
+  }
+  50% {
+    right: 33px;
+  }
+  to {
+    right: 35px;
+  }
 }
 html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock:hover, html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock:active, html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock.active {
   -webkit-filter: brightness(0.95);
@@ -845,6 +874,7 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock .gameI
 }
 html body .mainWrap .center .wrap .side_Right {
   width: 280px;
+  min-width: 187px;
   height: auto;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox {
@@ -864,7 +894,7 @@ html body .mainWrap .center .wrap .side_Right .searchBox {
   margin-bottom: 39px;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox input {
-  width: 234px;
+  width: 88%;
   height: 28px;
   border: none;
   padding: 9px 16px;
@@ -1007,8 +1037,8 @@ html body .mainWrap .center .wrap .titleArea.right {
   margin-bottom: 7px;
 }
 html body .mainWrap .center .bottomAll {
-  width: 1600px;
-  height: 68px;
+  width: 100%;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1023,7 +1053,7 @@ html body .mainWrap .center .bottomAll button {
   font-weight: bold;
   text-align: center;
   padding-left: 35px;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
 }
 html body .mainWrap .center .bottomAll button::before {
@@ -1105,7 +1135,7 @@ html body aside button .backtop {
 }
 html body footer {
   width: 100%;
-  height: auto;
+  height: 100%;
   background: #ececec;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1114,8 +1144,8 @@ html body footer {
 }
 html body footer .leftPic {
   width: 492px;
-  height: 494px;
-  margin-top: 36px;
+  height: 479px;
+  margin-top: 5%;
 }
 html body footer .rightPic {
   width: 374px;
@@ -1213,13 +1243,13 @@ html body footer .center button:hover, html body footer .center button:active, h
 }
 html body footer .center button:hover::before, html body footer .center button:active::before, html body footer .center button.active::before {
   content: " ";
-  width: 102%;
+  width: 101%;
   height: 84px;
   border: 5px solid #9d0000;
   border-radius: 50px;
   position: absolute;
   top: -9px;
-  left: -10px;
+  left: -9px;
 }
 html body footer .center button:hover::after, html body footer .center button:active::after, html body footer .center button.active::after {
   content: " ";
@@ -1313,11 +1343,13 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
   }
 }
 @media only screen and (max-width: 1703px) {
-  html body html {
-    width: 1703px;
-  }
   html body footer .leftPic {
-    margin: 48px 0 0;
+    margin: 100px 0 0;
+  }
+}
+@media only screen and (max-width: 1688px) {
+  html body footer .leftPic {
+    margin: 35px 0 0;
   }
 }
 @media only screen and (max-width: 1516px) {
@@ -1337,14 +1369,75 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
   html body .side_Right {
     width: 288px;
   }
+  html body .side_Right .newGame::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  html body .inWrap {
+    -ms-grid-columns: (46%)[2];
+    grid-template-columns: repeat(2, 46%);
+  }
+  html body .inWrap .gameBlock {
+    width: 64px;
+    height: 130px;
+    padding: 15px 52px 15px 15px;
+  }
+  html body .inWrap .gameBlock .gameInfo .detail {
+    display: none;
+  }
+  html body footer {
+    height: 558px;
+  }
+  html body footer .leftPic {
+    display: none;
+  }
+  html body footer .center {
+    margin: 0 71px;
+  }
+}
+@media only screen and (max-width: 1077px) {
+  html body footer {
+    height: 558px;
+  }
+  html body footer .rightPic {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1018px) {
+  html body .inWrap {
+    -ms-grid-columns: (46%)[2];
+    grid-template-columns: repeat(2, 46%);
+  }
+  html body .inWrap .gameBlock {
+    width: 64px;
+    height: 130px;
+    padding: 15px 52px 15px 15px;
+  }
+  html body .inWrap .gameBlock::before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1498px) {
+  html body .wrap {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  html body .wrap .side_Left {
+    margin-right: 3%;
+  }
+  html body .wrap .bottomAll {
+    width: 100%;
+  }
+  html body .wrap .bottomAll .gameBlock {
+    width: 230px;
+    height: 137px;
+  }
 }
 @media only screen and (max-width: 1000px) {
-  html body html {
-    width: 1000px;
-    height: 100%;
-  }
   html body header {
-    width: 1000px;
+    width: 100%;
   }
   html body header .top {
     width: 100%;
@@ -1355,23 +1448,17 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
   html body header .top .rightArea {
     width: 753px;
   }
-  html body header .mq_text {
-    width: 100%;
-    padding: 7px 13px;
-  }
-  html body header .mq_text .mqBox {
-    width: 100%;
-    height: auto;
-  }
-  html body header .mq_text .mqBox .textBox {
-    width: 62%;
-    height: 100%;
-  }
   html body main {
-    width: 1000px;
+    width: 100%;
     height: auto;
   }
   html body main .mainWrap {
+    width: 100%;
+  }
+  html body main .mainWrap .ad {
+    width: 100%;
+  }
+  html body main .mainWrap nav {
     width: 100%;
   }
   html body main .mainWrap .center {
@@ -1385,26 +1472,41 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     display: grid;
   }
   html body main .mainWrap .center .wrap .middle_Area {
-    width: 100%;
+    width: 1000px;
     height: auto;
     margin: 0 0 43px;
     padding: 0 5px 0 0;
   }
-  html body main .mainWrap .center .wrap .middle_Area .top .theme {
-    width: 48%;
-    height: auto;
+  html body main .mainWrap .center .wrap .middle_Area .top {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
   }
-  html body main .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox button.nextBtn, html body main .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox button.nextBtnC {
-    right: 87px;
+  html body main .mainWrap .center .wrap .middle_Area .top .theme {
+    width: 44%;
+    height: auto;
+    margin-right: 54px;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top .theme:last-child {
+    margin-right: 0;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox {
+    width: 75%;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .top .theme button.nextBtn, html body main .mainWrap .center .wrap .middle_Area .top .theme button.nextBtnC {
+    right: 23%;
   }
   html body main .mainWrap .center .wrap .middle_Area .bottom {
-    width: 100%;
+    width: 1000px;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .bottom .theme {
+    width: 93%;
   }
   html body main .mainWrap .center .wrap .middle_Area .bottom .inWrap {
-    width: 100%;
+    width: 93%;
     height: auto;
-    -ms-grid-columns: 454px 33px 454px;
-    grid-template-columns: repeat(2, 454px);
+    -ms-grid-columns: 444px 33px 444px;
+    grid-template-columns: repeat(2, 444px);
     -webkit-column-gap: 33px;
        -moz-column-gap: 33px;
             column-gap: 33px;
@@ -1413,8 +1515,17 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     width: 454px;
     height: 122px;
   }
+  html body main .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::before {
+    display: inline;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock .gameInfo {
+    display: inline;
+  }
+  html body main .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock .gameInfo .detail {
+    display: block;
+  }
   html body main .mainWrap .center .wrap .side_Right {
-    width: 943px;
+    width: 92%;
     height: auto;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1427,7 +1538,7 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     display: grid;
   }
   html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame {
-    width: 100%;
+    width: 93%;
     height: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1437,14 +1548,16 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
             order: 2;
   }
   html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame::before {
+    display: block;
     top: -66px;
+    right: -46px;
   }
   html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame .newgame {
     width: 314px;
     height: 139px;
   }
   html body main .mainWrap .center .wrap .side_Right .sR_rwd .searchBox {
-    width: 100%;
+    width: 99%;
     height: 42px;
     margin: 20px 0 30px;
     -webkit-box-ordinal-group: 4;
@@ -1456,7 +1569,7 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     height: 28px;
   }
   html body main .mainWrap .center .wrap .side_Left {
-    width: 100%;
+    width: 94%;
     height: auto;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;

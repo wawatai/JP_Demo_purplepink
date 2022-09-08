@@ -62,61 +62,66 @@
 }
 
 @media only screen and (max-width: 1795px) {
-    .mainWrap {
-      width: 100%;
+  .mainWrap {
+    width: 100%;
 
-      .center {
-        width: 90%;
+    .center {
+      width: 90%;
+      height: auto;
+
+      .wrap {
+        width: 100%;
         height: auto;
+        padding: 104px 20px 0;
+        box-sizing: border-box;
 
-        .wrap {
-          width: 100%;
-          height: auto;
-          padding: 104px 20px 0;
-          box-sizing: border-box;
+        .side_Left {
+          width: 20%;
 
-          .side_Left {
-            width: 20%;
-
-            .popBlock {
-                width: 100%;
-                min-width: 245px;
+          .popBlock {
+            width: 100%;
+            min-width: 245px;
           }
         }
 
-          .middle_Area {
-            width: 55%;
+        .middle_Area {
+          width: 55%;
 
-            .gameInfo {
-              max-width: 223px;
-            }
+          .gameInfo {
+            max-width: 223px;
           }
+        }
 
-          .side_Right {
-            width: 22%;
-          }
+        .side_Right {
+          width: 22%;
         }
       }
     }
+  }
 
-    footer {
-        .leftPic {
-            height: 470px;
-        }
+  footer {
+    .leftPic {
+      height: 470px;
     }
-  
+  }
 }
 
 @media only screen and (max-width: 1703px) {
-    html {
-        width: 1703px;
+  footer {
+    .leftPic {
+      margin: 100px 0 0;
     }
-    footer {
-        .leftPic {
-            margin: 48px 0 0 ;
-        }
-    }
+  }
 }
+
+@media only screen and (max-width: 1688px) {
+  footer {
+    .leftPic {
+      margin: 35px 0 0;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 1516px) {
   .side_Left {
@@ -138,18 +143,92 @@
 
   .side_Right {
     width: 288px;
+
+    .newGame {
+      &::before {
+        display: none;
+      }
+    }
   }
 }
 
+@media only screen and (max-width: 1230px) {
+  .inWrap {
+    grid-template-columns: repeat(2, 46%);
 
-@media only screen and (max-width: 1000px) {
-  html {
-    width: 1000px;
-    height: 100%;
+    .gameBlock {
+      width: 64px;
+      height: 130px;
+      padding: 15px 52px 15px 15px;
+
+      .gameInfo {
+        .detail {
+          display: none;
+        }
+      }
+    }
   }
 
+  footer {
+    height: 558px;
+
+    .leftPic {
+      display: none;
+    }
+
+    .center {
+      margin: 0 71px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1077px) {
+  footer {
+    height: 558px;
+
+    .rightPic {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1018px) {
+  .inWrap {
+    grid-template-columns: repeat(2, 46%);
+
+    .gameBlock {
+      width: 64px;
+      height: 130px;
+      padding: 15px 52px 15px 15px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1498px) {
+  .wrap {
+    justify-content: normal;
+
+    .side_Left {
+      margin-right: 3%;
+    }
+    .bottomAll {
+      width: 100%;
+
+      .gameBlock {
+        width: 230px;
+        height: 137px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   header {
-    width: 1000px;
+    width: 100%;
 
     .top {
       width: 100%;
@@ -160,28 +239,21 @@
         width: 753px;
       }
     }
-
-    .mq_text {
-      width: 100%;
-      padding: 7px 13px;
-
-      .mqBox {
-        width: 100%;
-        height: auto;
-
-        .textBox {
-          width: 62%;
-          height: 100%;
-        }
-      }
-    }
   }
   main {
-    width: 1000px;
+    width: 100%;
     height: auto;
 
     .mainWrap {
       width: 100%;
+
+      .ad {
+        width: 100%;
+      }
+
+      nav {
+        width: 100%;
+      }
 
       .center {
         width: 100%;
@@ -193,46 +265,69 @@
           display: grid;
 
           .middle_Area {
-            width: 100%;
+            width: 1000px;
             height: auto;
             margin: 0 0 43px;
             padding: 0 5px 0 0;
 
             .top {
+              justify-content: normal;
+
               .theme {
-                width: 48%;
+                width: 44%;
                 height: auto;
+                margin-right: 54px;
+
+                &:last-child {
+                  margin-right: 0;
+                }
 
                 .gWrapBox {
-                  button {
-                    &.nextBtn,
-                    &.nextBtnC {
-                      right: 87px;
-                    }
+                  width: 75%;
+                }
+
+                button {
+                  &.nextBtn,
+                  &.nextBtnC {
+                    right: 23%;
                   }
                 }
               }
             }
 
             .bottom {
-              width: 100%;
-
+              width: 1000px;
+              .theme {
+                width: 93%;
+              }
               .inWrap {
-                width: 100%;
+                width: 93%;
                 height: auto;
-                grid-template-columns: repeat(2, 454px);
+                grid-template-columns: repeat(2, 444px);
                 column-gap: 33px;
 
                 .gameBlock {
                   width: 454px;
                   height: 122px;
+
+                  &::before {
+                    display: inline;
+                  }
+
+                  .gameInfo {
+                    display: inline;
+
+                    .detail {
+                      display: block;
+                    }
+                  }
                 }
               }
             }
           }
 
           .side_Right {
-            width: 943px;
+            width: 92%;
             height: auto;
             order: 1;
 
@@ -242,13 +337,15 @@
               display: grid;
 
               .newGame {
-                width: 100%;
+                width: 93%;
                 height: 140px;
                 display: flex;
                 order: 2;
 
                 &::before {
+                  display: block;
                   top: -66px;
+                  right: -46px;
                 }
 
                 .newgame {
@@ -258,7 +355,7 @@
               }
 
               .searchBox {
-                width: 100%;
+                width: 99%;
                 height: 42px;
                 margin: 20px 0 30px;
                 order: 3;
@@ -272,7 +369,7 @@
           }
 
           .side_Left {
-            width: 100%;
+            width: 94%;
             height: auto;
             order: 2;
             display: flex;
