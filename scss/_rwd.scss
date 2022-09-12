@@ -122,7 +122,6 @@
   }
 }
 
-
 @media only screen and (max-width: 1516px) {
   .side_Left {
     width: 261px;
@@ -262,15 +261,17 @@
           width: 100%;
           height: auto;
           padding: 43px 25px 0;
-          display: grid;
+          box-sizing: border-box;
+          flex-direction: column;
 
           .middle_Area {
-            width: 1000px;
+            width: 100%;
             height: auto;
             margin: 0 0 43px;
             padding: 0 5px 0 0;
 
             .top {
+              width: 100%;
               justify-content: normal;
 
               .theme {
@@ -296,7 +297,7 @@
             }
 
             .bottom {
-              width: 1000px;
+              width: 100%;
               .theme {
                 width: 93%;
               }
@@ -349,7 +350,7 @@
                 }
 
                 .newgame {
-                  width: 314px;
+                  width: 308px;
                   height: 139px;
                 }
               }
@@ -369,7 +370,7 @@
           }
 
           .side_Left {
-            width: 94%;
+            width: 100%;
             height: auto;
             order: 2;
             display: flex;

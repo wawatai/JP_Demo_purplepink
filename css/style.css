@@ -509,7 +509,6 @@ html body .mainWrap {
 }
 html body .mainWrap .ad {
   width: 100%;
-  min-width: 1000px;
   position: relative;
 }
 html body .mainWrap .ad .single-item {
@@ -552,6 +551,7 @@ html body .mainWrap nav {
   position: relative;
 }
 html body .mainWrap nav ul {
+  width: 100%;
   max-width: 894px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,9 +873,10 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock .gameI
   margin-bottom: 8px;
 }
 html body .mainWrap .center .wrap .side_Right {
-  width: 280px;
+  width: 17%;
   min-width: 187px;
   height: auto;
+  margin-left: 2%;
 }
 html body .mainWrap .center .wrap .side_Right .searchBox {
   width: 100%;
@@ -983,8 +984,8 @@ html body .mainWrap .center .wrap .side_Right .newGame li::before {
   }
 }
 html body .mainWrap .center .wrap .side_Right .newGame li .newgame {
-  width: 280px;
-  height: 139px;
+  width: 100%;
+  height: auto;
   -o-object-fit: 100%;
      object-fit: 100%;
 }
@@ -1468,16 +1469,21 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     width: 100%;
     height: auto;
     padding: 43px 25px 0;
-    display: -ms-grid;
-    display: grid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   html body main .mainWrap .center .wrap .middle_Area {
-    width: 1000px;
+    width: 100%;
     height: auto;
     margin: 0 0 43px;
     padding: 0 5px 0 0;
   }
   html body main .mainWrap .center .wrap .middle_Area .top {
+    width: 100%;
     -webkit-box-pack: normal;
         -ms-flex-pack: normal;
             justify-content: normal;
@@ -1497,7 +1503,7 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     right: 23%;
   }
   html body main .mainWrap .center .wrap .middle_Area .bottom {
-    width: 1000px;
+    width: 100%;
   }
   html body main .mainWrap .center .wrap .middle_Area .bottom .theme {
     width: 93%;
@@ -1553,7 +1559,7 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     right: -46px;
   }
   html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame .newgame {
-    width: 314px;
+    width: 308px;
     height: 139px;
   }
   html body main .mainWrap .center .wrap .side_Right .sR_rwd .searchBox {
@@ -1569,7 +1575,7 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     height: 28px;
   }
   html body main .mainWrap .center .wrap .side_Left {
-    width: 94%;
+    width: 100%;
     height: auto;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;

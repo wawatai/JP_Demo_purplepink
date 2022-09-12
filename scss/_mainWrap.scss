@@ -7,7 +7,7 @@
   //輪播圖
   .ad {
     width: 100%;
-    min-width: 1000px;
+    //min-width: 1000px;
     position: relative;
 
     .single-item {
@@ -64,6 +64,7 @@
     position: relative;
 
     ul {
+      width: 100%;
       max-width: 894px;
       display: flex;
       margin: 0 auto;
@@ -152,7 +153,9 @@
           position: relative;
           cursor: pointer;
 
-          &:hover,&:active,&.active {
+          &:hover,
+          &:active,
+          &.active {
             filter: brightness(0.9);
           }
 
@@ -228,17 +231,19 @@
                 height: auto;
                 display: flex;
                 transition: 0.5s all;
-  
+
                 li {
                   width: 98px;
                   height: auto;
                   margin-right: 12px;
                   cursor: pointer;
-  
-                  &:hover,&:active,&.active {
+
+                  &:hover,
+                  &:active,
+                  &.active {
                     transform: scale(1.15);
                   }
-  
+
                   img {
                     width: 98px;
                     height: 98px;
@@ -318,15 +323,22 @@
                 right: 33px;
                 filter: brightness(59.9);
                 animation: xmove 1s ease-in-out infinite;
-                  @keyframes xmove {
-                    from { right: 30px; }
-                    50%  { right: 33px; } 
-                    to   { right: 35px; }
+                @keyframes xmove {
+                  from {
+                    right: 30px;
+                  }
+                  50% {
+                    right: 33px;
+                  }
+                  to {
+                    right: 35px;
                   }
                 }
-              
+              }
 
-              &:hover,&:active,&.active {
+              &:hover,
+              &:active,
+              &.active {
                 filter: brightness(0.95);
               }
 
@@ -358,9 +370,10 @@
       }
 
       .side_Right {
-        width: 280px;
+        width: 17%;
         min-width: 187px;
         height: auto;
+        margin-left: 2%;
 
         .searchBox {
           width: 100%;
@@ -399,7 +412,7 @@
         .newGame {
           width: 100%;
           height: auto;
-          display: table; 
+          display: table;
           position: relative;
 
           &::before {
@@ -417,7 +430,9 @@
             position: relative;
             cursor: pointer;
 
-            &:hover,&:active,&.active {
+            &:hover,
+            &:active,
+            &.active {
               transform: scale(1.1);
               filter: brightness(0.9);
             }
@@ -432,17 +447,16 @@
               left: 7px;
               z-index: 5;
               animation: bump 1s ease-in-out infinite;
-              
-              @keyframes bump {
 
+              @keyframes bump {
                 0% {
                   top: 0;
                 }
-                
+
                 50% {
                   top: 3px;
                 }
-            
+
                 100% {
                   top: 0;
                 }
@@ -451,8 +465,10 @@
 
             //圖片尺寸
             .newgame {
-              width: 280px;
-              height: 139px;
+              //width: 280px;
+              width: 100%;
+              height: auto;
+              //height: 139px;
               object-fit: 100%;
             }
           }
@@ -543,7 +559,9 @@
           right: 32px;
         }
 
-        &:hover,&:active,&.active {
+        &:hover,
+        &:active,
+        &.active {
           text-shadow: 0 0 3px $lightfont;
 
           &::before {
@@ -552,18 +570,17 @@
           }
 
           &::after {
-            animation: down 1s  ease-in-out infinite;
+            animation: down 1s ease-in-out infinite;
 
             @keyframes down {
-
               0% {
                 top: 20px;
               }
-              
+
               50% {
                 top: 23px;
               }
-          
+
               100% {
                 top: 20px;
               }
