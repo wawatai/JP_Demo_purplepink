@@ -139,13 +139,13 @@
 
       .side_Left {
         width: 20%;
-        min-width: 255px;
+        min-width: 189px;
         height: auto;
         margin-right: 2%;
 
         .popBlock {
           width: 100%;
-          min-width: 255px;
+          min-width: 194px;
           height: 251px;
           border-radius: 5px;
           box-shadow: 5px 5px 5px 1px rgb(0, 0, 0, 15%);
@@ -174,7 +174,7 @@
 
           .popInfo {
             width: 100%;
-            min-width: 255px;
+            min-width: 194px;
             height: 69px;
             border-radius: 0 0 5px 5px;
             background: $recInfoBG;
@@ -205,7 +205,6 @@
       .middle_Area {
         width: 58%;
         height: auto;
-        margin-right: 2%;
 
         .top {
           width: 100%;
