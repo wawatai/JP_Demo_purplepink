@@ -381,256 +381,256 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  header {
-    width: 100%;
+// @media only screen and (max-width: 1000px) {
+//   header {
+//     width: 100%;
 
-    .top {
-      width: 100%;
-      padding: 0 9px;
-      box-sizing: border-box;
+//     .top {
+//       width: 100%;
+//       padding: 0 9px;
+//       box-sizing: border-box;
 
-      .rightArea {
-        width: 753px;
-      }
-    }
-  }
-  main {
-    width: 100%;
-    height: auto;
+//       .rightArea {
+//         width: 753px;
+//       }
+//     }
+//   }
+//   main {
+//     width: 100%;
+//     height: auto;
 
-    .mainWrap {
-      width: 100%;
+//     .mainWrap {
+//       width: 100%;
 
-      .ad {
-        width: 100%;
-      }
+//       .ad {
+//         width: 100%;
+//       }
 
-      nav {
-        width: 100%;
-      }
+//       nav {
+//         width: 100%;
+//       }
 
-      .center {
-        width: 100%;
+//       .center {
+//         width: 100%;
 
-        .wrap {
-          width: 100%;
-          height: auto;
-          padding: 43px 25px 0;
-          box-sizing: border-box;
-          flex-direction: column;
+//         .wrap {
+//           width: 100%;
+//           height: auto;
+//           padding: 43px 25px 0;
+//           box-sizing: border-box;
+//           flex-direction: column;
 
-          .middle_Area {
-            width: 100%;
-            height: auto;
-            margin: 0 0 43px;
-            padding: 0 5px 0 0;
+//           .middle_Area {
+//             width: 100%;
+//             height: auto;
+//             margin: 0 0 43px;
+//             padding: 0 5px 0 0;
 
-            .top {
-              width: 100%;
-              justify-content: normal;
+//             .top {
+//               width: 100%;
+//               justify-content: normal;
 
-              .theme {
-                width: 44%;
-                height: auto;
-                margin-right: 54px;
+//               .theme {
+//                 width: 44%;
+//                 height: auto;
+//                 margin-right: 54px;
 
-                &:last-child {
-                  margin-right: 0;
-                }
+//                 &:last-child {
+//                   margin-right: 0;
+//                 }
 
-                .gWrapBox {
-                  width: 80%;
-                }
+//                 .gWrapBox {
+//                   width: 80%;
+//                 }
 
-                button {
-                  &.nextBtn,
-                  &.nextBtnC {
-                    right: 16%;
-                  }
-                }
-              }
-            }
+//                 button {
+//                   &.nextBtn,
+//                   &.nextBtnC {
+//                     right: 16%;
+//                   }
+//                 }
+//               }
+//             }
 
-            .bottom {
-              width: 100%;
-              .theme {
-                width: 93%;
-              }
-              .inWrap {
-                width: 93%;
-                height: auto;
-                grid-template-columns: repeat(2, 444px);
-                column-gap: 33px;
+//             .bottom {
+//               width: 100%;
+//               .theme {
+//                 width: 93%;
+//               }
+//               .inWrap {
+//                 width: 93%;
+//                 height: auto;
+//                 grid-template-columns: repeat(2, 444px);
+//                 column-gap: 33px;
 
-                .gameBlock {
-                  width: 454px;
-                  height: 122px;
+//                 .gameBlock {
+//                   width: 454px;
+//                   height: 122px;
 
-                  &::before {
-                    display: inline;
-                  }
+//                   &::before {
+//                     display: inline;
+//                   }
 
-                  .gameInfo {
-                    display: inline;
+//                   .gameInfo {
+//                     display: inline;
 
-                    .detail {
-                      display: block;
-                    }
-                  }
-                }
-              }
-            }
-          }
+//                     .detail {
+//                       display: block;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
 
-          .side_Right {
-            width: 92%;
-            height: auto;
-            order: 1;
+//           .side_Right {
+//             width: 92%;
+//             height: auto;
+//             order: 1;
 
-            .sR_rwd {
-              width: 100%;
-              height: auto;
-              display: grid;
+//             .sR_rwd {
+//               width: 100%;
+//               height: auto;
+//               display: grid;
 
-              .newGame {
-                width: 93%;
-                height: 140px;
-                display: flex;
-                order: 2;
+//               .newGame {
+//                 width: 93%;
+//                 height: 140px;
+//                 display: flex;
+//                 order: 2;
 
-                li {
-                  &::before {
-                    width: 143px;
-                    height: 187px;
-                  }
-                } 
+//                 li {
+//                   &::before {
+//                     width: 143px;
+//                     height: 187px;
+//                   }
+//                 } 
 
-                &::before {
-                  display: block;
-                  top: -66px;
-                  right: -46px;
-                }
+//                 &::before {
+//                   display: block;
+//                   top: -66px;
+//                   right: -46px;
+//                 }
 
-                .newgame {
-                  width: 308px;
-                  height: 139px;
-                }
-              }
+//                 .newgame {
+//                   width: 308px;
+//                   height: 139px;
+//                 }
+//               }
 
-              .searchBox {
-                width: 99%;
-                height: 42px;
-                margin: 20px 0 30px;
-                order: 3;
+//               .searchBox {
+//                 width: 99%;
+//                 height: 42px;
+//                 margin: 20px 0 30px;
+//                 order: 3;
 
-                input {
-                  width: 97%;
-                  height: 28px;
-                }
-              }
-            }
-          }
+//                 input {
+//                   width: 97%;
+//                   height: 28px;
+//                 }
+//               }
+//             }
+//           }
 
-          .side_Left {
-            width: 100%;
-            height: auto;
-            order: 2;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 8px 0 0;
-            order: 2;
+//           .side_Left {
+//             width: 100%;
+//             height: auto;
+//             order: 2;
+//             display: flex;
+//             justify-content: space-between;
+//             padding: 0 8px 0 0;
+//             order: 2;
 
-            .popBlock {
-              width: 48%;
-              height: 287px;
+//             .popBlock {
+//               width: 48%;
+//               height: 287px;
 
-              .popInfo {
-                top: 223px;
-              }
+//               .popInfo {
+//                 top: 223px;
+//               }
 
-              &.left02::before {
-                bottom: 64px;
-              }
-            }
-          }
-        }
+//               &.left02::before {
+//                 bottom: 64px;
+//               }
+//             }
+//           }
+//         }
 
-        .bottomAll {
-          width: 100%;
-          margin: 28px 0;
-        }
-      }
-    }
+//         .bottomAll {
+//           width: 100%;
+//           margin: 28px 0;
+//         }
+//       }
+//     }
 
-    aside {
-      button {
-        right: 16px;
-      }
-    }
-  }
+//     aside {
+//       button {
+//         right: 16px;
+//       }
+//     }
+//   }
 
-  footer {
-    width: 100%;
-    height: 558px;
-    padding: 30px;
-    box-sizing: border-box;
+//   footer {
+//     width: 100%;
+//     height: 558px;
+//     padding: 30px;
+//     box-sizing: border-box;
 
-    .leftPic {
-      width: 0;
-      height: 0;
-      display: none;
-    }
+//     .leftPic {
+//       width: 0;
+//       height: 0;
+//       display: none;
+//     }
 
-    .center {
-      width: 100%;
-      height: auto;
+//     .center {
+//       width: 100%;
+//       height: auto;
 
-      ul {
-        li {
-          p {
-            font-size: 20px;
-          }
-        }
-      }
+//       ul {
+//         li {
+//           p {
+//             font-size: 20px;
+//           }
+//         }
+//       }
 
-      button {
-        width: 50%;
-        height: 65px;
-        white-space: nowrap;
-        display: flex;
-        margin: 0 auto;
+//       button {
+//         width: 50%;
+//         height: 65px;
+//         white-space: nowrap;
+//         display: flex;
+//         margin: 0 auto;
 
-        &:hover,
-        &:active,
-        &.active {
-          &::before {
-            content: " ";
-            width: 103%;
-            height: 80px;
-            border: 5px solid $cs24hrBtnBorder;
-            border-radius: 50px;
-            position: absolute;
-            top: -12px;
-            left: -12px;
-          }
+//         &:hover,
+//         &:active,
+//         &.active {
+//           &::before {
+//             content: " ";
+//             width: 103%;
+//             height: 80px;
+//             border: 5px solid $cs24hrBtnBorder;
+//             border-radius: 50px;
+//             position: absolute;
+//             top: -12px;
+//             left: -12px;
+//           }
 
-          &::after {
-            content: " ";
-            width: 167px;
-            height: 118px;
-            position: absolute;
-            top: -55px;
-            right: -50px;
-          }
-        }
-      }
-    }
+//           &::after {
+//             content: " ";
+//             width: 167px;
+//             height: 118px;
+//             position: absolute;
+//             top: -55px;
+//             right: -50px;
+//           }
+//         }
+//       }
+//     }
 
-    .rightPic {
-      width: 0;
-      height: 0;
-      display: none;
-    }
-  }
-}
+//     .rightPic {
+//       width: 0;
+//       height: 0;
+//       display: none;
+//     }
+//   }
+// }
