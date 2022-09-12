@@ -31,7 +31,7 @@ header .mq_icon {
 
 .mainWrap .arrowIcon,
 .mainWrap .nextIcon,
-.mainWrap .middle_Area .bottom .gameBlock::after {
+.mainWrap .middle_Area .bottom .gameBlock .gBlockarrow {
   background: url(../img/right-arrow.png) no-repeat center;
   background-size: contain;
 }
@@ -806,27 +806,17 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock {
   position: relative;
   cursor: pointer;
 }
-html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::before {
-  content: " ";
+html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock button {
   width: 26px;
   height: 26px;
   background: #cc00ff;
   border-radius: 40px;
+  padding: 7px 10px;
   position: absolute;
   top: 40%;
   right: 25px;
-}
-html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::after {
-  content: " ";
-  width: 7px;
-  height: 13px;
-  position: absolute;
-  top: 45%;
-  right: 33px;
-  -webkit-filter: brightness(59.9);
-          filter: brightness(59.9);
-  -webkit-animation: xmove 1s ease-in-out infinite;
-          animation: xmove 1s ease-in-out infinite;
+  -webkit-animation: xmove 0.4s ease-in-out infinite alternate;
+          animation: xmove 0.4s ease-in-out infinite alternate;
 }
 @-webkit-keyframes xmove {
   from {
@@ -843,6 +833,12 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::after
   to {
     right: 35px;
   }
+}
+html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock button .gBlockarrow {
+  width: 7px;
+  height: 13px;
+  -webkit-filter: brightness(59.9);
+          filter: brightness(59.9);
 }
 html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock:hover, html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock:active, html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock.active {
   -webkit-filter: brightness(0.95);

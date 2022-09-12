@@ -292,7 +292,6 @@
 
             .gameBlock {
               width: 100%;
-              //min-width: 233px;
               height: 122px;
               background: $gameBlock_BG;
               border-radius: 5px;
@@ -303,26 +302,16 @@
               position: relative;
               cursor: pointer;
 
-              &::before {
-                content: " ";
+              button {
                 width: 26px;
                 height: 26px;
                 background: $tagfont;
                 border-radius: 40px;
+                padding: 7px 10px;
                 position: absolute;
                 top: 40%;
                 right: 25px;
-              }
-
-              &::after {
-                content: " ";
-                width: 7px;
-                height: 13px;
-                position: absolute;
-                top: 45%;
-                right: 33px;
-                filter: brightness(59.9);
-                animation: xmove 1s ease-in-out infinite;
+                animation: xmove 0.4s ease-in-out infinite alternate;
                 @keyframes xmove {
                   from {
                     right: 32px;
@@ -330,6 +319,12 @@
                   to {
                     right: 35px;
                   }
+                }
+
+                .gBlockarrow {
+                  width: 7px;
+                  height: 13px;
+                  filter: brightness(59.9);
                 }
               }
 
