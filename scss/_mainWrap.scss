@@ -241,6 +241,7 @@
                   &:active,
                   &.active {
                     transform: scale(1.15);
+                    transition: ease-in 0.3s;
                   }
 
                   img {
@@ -321,13 +322,10 @@
                 top: 45%;
                 right: 33px;
                 filter: brightness(59.9);
-                animation: xmove 1s ease-in-out infinite;
+                animation: xmove 1s ease-in infinite;
                 @keyframes xmove {
                   from {
-                    right: 30px;
-                  }
-                  50% {
-                    right: 33px;
+                    right: 32px;
                   }
                   to {
                     right: 35px;
@@ -434,6 +432,7 @@
             &.active {
               transform: scale(1.1);
               filter: brightness(0.9);
+              transition: ease-in-out 0.2s;
             }
 
             //新登場

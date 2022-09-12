@@ -726,6 +726,8 @@ html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap l
 html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li:hover, html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li:active, html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li.active {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 html body .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox .gameWrap li img {
   width: 98px;
@@ -823,15 +825,12 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::after
   right: 33px;
   -webkit-filter: brightness(59.9);
           filter: brightness(59.9);
-  -webkit-animation: xmove 1s ease-in-out infinite;
-          animation: xmove 1s ease-in-out infinite;
+  -webkit-animation: xmove 1s ease-in infinite;
+          animation: xmove 1s ease-in infinite;
 }
 @-webkit-keyframes xmove {
   from {
-    right: 30px;
-  }
-  50% {
-    right: 33px;
+    right: 32px;
   }
   to {
     right: 35px;
@@ -839,10 +838,7 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::after
 }
 @keyframes xmove {
   from {
-    right: 30px;
-  }
-  50% {
-    right: 33px;
+    right: 32px;
   }
   to {
     right: 35px;
@@ -948,6 +944,8 @@ html body .mainWrap .center .wrap .side_Right .newGame li:hover, html body .main
           transform: scale(1.1);
   -webkit-filter: brightness(0.9);
           filter: brightness(0.9);
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 html body .mainWrap .center .wrap .side_Right .newGame li::before {
   content: " ";
@@ -1413,10 +1411,10 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     margin-right: 0;
   }
   html body main .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox {
-    width: 75%;
+    width: 96%;
   }
   html body main .mainWrap .center .wrap .middle_Area .top .theme button.nextBtn, html body main .mainWrap .center .wrap .middle_Area .top .theme button.nextBtnC {
-    right: 23%;
+    right: 2%;
   }
   html body main .mainWrap .center .wrap .middle_Area .bottom {
     width: 100%;
@@ -1519,8 +1517,8 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
   }
   html body main .mainWrap .center .wrap .side_Left .popBlock.left02::before {
     width: 103px;
-    height: 121px;
-    top: 254px;
+    height: 94px;
+    bottom: 64px;
   }
   html body main .mainWrap .center .bottomAll {
     width: 100%;
@@ -1642,10 +1640,10 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     margin-right: 0;
   }
   html body main .mainWrap .center .wrap .middle_Area .top .theme .gWrapBox {
-    width: 75%;
+    width: 80%;
   }
   html body main .mainWrap .center .wrap .middle_Area .top .theme button.nextBtn, html body main .mainWrap .center .wrap .middle_Area .top .theme button.nextBtnC {
-    right: 23%;
+    right: 16%;
   }
   html body main .mainWrap .center .wrap .middle_Area .bottom {
     width: 100%;
@@ -1697,6 +1695,10 @@ html body main .mainWrap .center .wrap .middle_Area .top .theme .nextBtnC {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame li::before {
+    width: 143px;
+    height: 187px;
   }
   html body main .mainWrap .center .wrap .side_Right .sR_rwd .newGame::before {
     display: block;
