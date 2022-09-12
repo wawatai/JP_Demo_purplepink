@@ -322,7 +322,7 @@
                 top: 45%;
                 right: 33px;
                 filter: brightness(59.9);
-                animation: xmove 1s ease-in infinite;
+                animation: xmove 1s ease-in-out infinite;
                 @keyframes xmove {
                   from {
                     right: 32px;
@@ -546,6 +546,7 @@
           position: absolute;
           bottom: -1px;
           left: -2px;
+          pointer-events: none;
         }
 
         &::after {

@@ -825,8 +825,8 @@ html body .mainWrap .center .wrap .middle_Area .bottom .inWrap .gameBlock::after
   right: 33px;
   -webkit-filter: brightness(59.9);
           filter: brightness(59.9);
-  -webkit-animation: xmove 1s ease-in infinite;
-          animation: xmove 1s ease-in infinite;
+  -webkit-animation: xmove 1s ease-in-out infinite;
+          animation: xmove 1s ease-in-out infinite;
 }
 @-webkit-keyframes xmove {
   from {
@@ -1061,6 +1061,7 @@ html body .mainWrap .center .bottomAll button::before {
   position: absolute;
   bottom: -1px;
   left: -2px;
+  pointer-events: none;
 }
 html body .mainWrap .center .bottomAll button::after {
   content: " ";
